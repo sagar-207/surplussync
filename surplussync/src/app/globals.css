@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-feature-settings: "ss01" on;
+}
+
+::selection {
+  background-color: #f1873b;
+  color: #0b1c12;
+}
+
+/* Subtle dot-grid texture, used as a background-image utility via class .bg-dots */
+.bg-dots {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: 22px 22px;
+}
